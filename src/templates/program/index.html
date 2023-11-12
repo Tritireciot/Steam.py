@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Happy banking - Payment</title>
+</head>
+<body>
+    <p>Your account balance is <strong>{{ balance }}</strong></p>
+    <p>Please select how much you want to transfer</p>
+    <p>
+        <a href="{% url 'index' %}?amount=10">Transfer $10</a> | 
+        <a href="{% url 'index' %}?amount=100">Transfer $100</a> |
+        <a href="{% url 'index' %}?amount=1000">Transfer $1000</a>
+    </p>
+</body>
+</html>
+

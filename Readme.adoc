@@ -1,0 +1,32 @@
+= SecDim's Defensive Programming challenge
+Python
+
+== Objective
+
+Find the security vulnerability and effectively fix it.
+
+== Important notes
+
+. Push only to `master` branch.
+. Do not modify existing tests. Make the program to follow existing tests specification.
+. Tests will be overwritten on the remote server.
+. You can add new tests. They will not impact the challenge outcome.
+. You cannot modify nor install new dependencies. Solve the challenge using your own solution.
+
+== Guide
+
+. Add your SSH public key to https://id.secdim.com[SecDim ID]
+. Install https://docs.docker.com/get-docker/[docker] and https://www.gnu.org/software/make/[make] on your system.
+. Build the program: `make build`.
+. Run functionality tests: `make test`.
+. Run security tests: `make securitytest`. This test will fail.
+. `make run` to run the program
+. `make debug` to live debug program in the container with `src/` mounted from the host.
+. Complete the challenge objective.
+. `git push` your changes to the `master` branch of your remote repository.
+. Hit `Test` on Challenge status webpage to test your submission.
+. If your submission is correct, you will gain the challenge score.
+
+== Troubleshooting
+
+Ask your question on https://discuss.secdim.com[SecDim Discuss]
